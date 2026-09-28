@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kost Arutra</title>
+<style>
+:root{--bg:#faf8f4;--card:#fff;--text:#22252a;--muted:#666b73;--accent:#1f6f5c;--accent-text:#fff;--line:#e6e2da;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15181b;--card:#1e2226;--text:#eceae5;--muted:#9aa0a6;--accent:#4fb59a;--accent-text:#0d1512;--line:#2e343a}}
+:root[data-theme="dark"]{--bg:#15181b;--card:#1e2226;--text:#eceae5;--muted:#9aa0a6;--accent:#4fb59a;--accent-text:#0d1512;--line:#2e343a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:1.2rem;color:var(--accent)}
+nav a{color:var(--text);text-decoration:none;margin-left:16px;font-size:.95rem}
+.hero{padding:64px 0 48px;text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);margin:0 0 12px;line-height:1.15}
+.hero p{color:var(--muted);max-width:520px;margin:0 auto 24px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent);margin-left:8px}
+section{padding:40px 0}
+h2{font-size:1.5rem;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.price{font-size:1.6rem;font-weight:700;color:var(--accent);margin:8px 0}
+.note{font-size:.85rem;color:var(--muted);margin-top:14px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<span class="logo">🏠 Kost Arutra</span>
+<div><a href="#fasilitas">Fasilitas</a><a href="#harga">Harga</a><a href="#lokasi">Lokasi</a><a href="#kontak">Kontak</a></div>
+</nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<h1>Kost nyaman untuk hunian sehari-hari</h1>
+<p>Kost Arutra di Pangkalpinang: bersih, aman, dan mudah dijangkau. Cocok untuk mahasiswa maupun pekerja.</p>
+<a class="btn" href="#kontak">Hubungi Kami</a><a class="btn alt" href="#lokasi">Lihat Lokasi</a>
+</div>
+
+<section id="fasilitas">
+<h2>Fasilitas</h2>
+<div class="grid">
+<div class="card"><h3>🛏️ Kamar Nyaman</h3><p>Kamar bersih dengan kasur dan lemari.</p></div>
+<div class="card"><h3>🚿 Kamar Mandi</h3><p>Kamar mandi bersih dan terawat.</p></div>
+<div class="card"><h3>📶 WiFi</h3><p>Internet untuk kuliah dan kerja.</p></div>
+<div class="card"><h3>🏍️ Parkir</h3><p>Area parkir motor untuk penghuni.</p></div>
+<div class="card"><h3>🔒 Aman</h3><p>Lingkungan tenang dan terjaga.</p></div>
+</div>
+<p class="note">Daftar fasilitas di atas contoh, silakan sesuaikan dengan kondisi sebenarnya.</p>
+</section>
+
+<section id="harga">
+<h2>Harga Sewa</h2>
+<div class="grid">
+<div class="card"><h3>Bulanan</h3><div class="price">Rp 500.000</div><p>Per bulan</p></div>
+<div class="card"><h3>Tahunan</h3><div class="price">Rp 5.000.000</div><p>Per tahun, lebih hemat</p></div>
+</div>
+</section>
+
+<section id="lokasi">
+<h2>Lokasi</h2>
+<div class="card">
+<p>Kost Arutra, Pangkalpinang, Kepulauan Bangka Belitung.</p>
+<p style="margin-top:14px"><a class="btn" href="https://www.google.com/maps/place/Kost+Arutra/@-2.1372761,106.1264662,1705m/data=!3m1!1e3!4m6!3m5!1s0x2e22c7cca5732fcd:0xc5da3d3f9f447a7b!8m2!3d-2.1373969!4d106.1305454!16s%2Fg%2F11wqy1mgwq" target="_blank" rel="noopener">Buka di Google Maps</a></p>
+</div>
+</section>
+
+<section id="kontak">
+<h2>Kontak &amp; Pemesanan</h2>
+<div class="card">
+<p>Tertarik menyewa atau ingin survei kamar? Hubungi pengelola.</p>
+<p style="margin-top:14px"><a class="btn" href="https://wa.me/6283802225551" target="_blank" rel="noopener">Chat WhatsApp</a></p>
+<p class="note">WhatsApp: +62 838-0222-5551</p>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Kost Arutra · Pangkalpinang</div></footer>
+</body>
+</html>
